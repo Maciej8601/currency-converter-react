@@ -1,0 +1,14 @@
+.body {
+    background-image: url("../background.jfif");
+    background-size: cover;
+    background-position: center;
+    resize: both;
+    overflow: auto;
+    color: aliceblue;
+}
+
+.body__title {
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+}
