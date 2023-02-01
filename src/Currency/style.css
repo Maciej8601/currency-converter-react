@@ -1,0 +1,9 @@
+.currency {
+    display: grid;
+    background-color: rgb(66, 63, 88);
+    color: gold;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+}
