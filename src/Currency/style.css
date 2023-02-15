@@ -1,5 +1,6 @@
 .currency {
     display: grid;
+    justify-items: center;
     background-color: rgb(66, 63, 88);
     color: gold;
     max-width: 500px;
