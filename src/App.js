@@ -1,6 +1,6 @@
 import './App.css';
-import Footer from "./footer";
-import Form from "./form";
+import Footer from "./Footer";
+import Form from "./Form";
 import Currency from "./Currency";
 import Title from "./Title";
 
