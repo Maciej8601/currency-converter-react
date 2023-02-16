@@ -9,14 +9,10 @@ const Form = () => {
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-        console.log({ recalc });
     };
 
     const onSelectChange = ({ target }) => setNewValue(target.value);
-    const brandNewValue = newValue;
-    const newNumber = newTaskContent;
-    const currencyName = { onSelectChange };
-    let recalc = newNumber / brandNewValue;
+    let recalc = newTaskContent / newValue;
 
     return (
         <form className="form" onSubmit={onFormSubmit}>
@@ -41,15 +37,15 @@ const Form = () => {
                     value={newValue}
                     onChange={onSelectChange}
                 >
-                    <option value="4.71" label=" EUR" >EUR</option>
-                    <option value="4.77" label=" USD" >USD</option>
-                    <option value="4.76" label=" CHF" >CHF</option>
+                    <option value="4.77" label=" EUR" >EUR</option>
+                    <option value="4.47" label=" USD" >USD</option>
+                    <option value="4.83" label=" CHF" >CHF</option>
                 </select>
             </label>
             <button className="form__recalc">Przelicz</button>
             <p>
                 Otrzymasz
-                <span> {recalc.toFixed(2)}</span>
+                <span> {recalc.toFixed(2)} {newValue}</span>
             </p>
         </form>
     )
